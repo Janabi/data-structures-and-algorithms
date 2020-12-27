@@ -1,5 +1,12 @@
 # Data Structures and Algorithms
 
+## Table of Contents
+**For the challenges folder**
+Code Challenge | File Links 
+-------------- | ------------- 
+Code challenge 1 | [Here](./challenges/arrayReverse/README.md)
+
+
 ## Create a copy of this repository
 
 If you have not already created your data-structures-and-algorithms repository, Please follow these steps:

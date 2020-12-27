@@ -9,4 +9,4 @@
 ***Checkout the figure below to undertand what I exactly did for the solution of this problem.***
 
 ## Solution
-![Code Challenge 1](code-challenge1.jpg)
+![Code Challenge 1](./assets/array-reverse.jpg)
