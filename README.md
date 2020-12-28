@@ -5,6 +5,7 @@
 Code Challenge | File Links 
 -------------- | ------------- 
 Code challenge 1 | [Here](./challenges/arrayReverse/README.md)
+Code challenge 2 | [Here](./challenges/arrayShift/README.md)
 
 
 ## Create a copy of this repository
