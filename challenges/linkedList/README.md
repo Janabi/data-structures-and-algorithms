@@ -27,3 +27,7 @@ This method is aimed to insert a node before a node that has a given value which
 
 - **insertAfter(value, newVal)**
 This method is aimed to insert a node after a node that has a given value which as you can see from the second argument of this method. If the head was null then insert the node as a head.
+
+### Whiteboard (Solution)
+![Whiteboard1](./assets/challenge-6.png)
+![Whiteboard2](./assets/challenge-6-1.png)
