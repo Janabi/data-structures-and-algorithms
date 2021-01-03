@@ -12,7 +12,7 @@ class LinkedList {
       this.head = null;
     }
 
-    insert(value) {
+    append(value) {
       const node = new Node(value);
       
       if (!this.head) {
@@ -28,6 +28,61 @@ class LinkedList {
       }
       currentNode.next = node;
       return this;
+    }
+
+    insert(value) {
+      const node = new Node(value);
+      node.next = this.head;
+      this.head = node;
+      return this;
+    }
+
+    insertBefore(value, newVal) {
+      const node = new Node(newVal);
+
+      if(!this.head) {
+        return 'There is no linked list exists';
+      }
+
+      let previous = null;
+      let current = this.head;
+
+      while(current) {
+        if (current.value === value){
+          if(!previous) {
+            this.head = node;
+          } else {
+            previous.next = node;
+          }
+          node.next = current;
+          return this;
+        } else {
+          previous = current;
+          current = current.next;
+        }
+      }
+
+      return `There is no such this value ${value} exist throughout the nodes in the linked list`;
+    }
+
+    insertAfter(value, newVal) {
+      const node = new Node(newVal);
+
+      if(!this.head) {
+        return 'There is no linked list exists';
+      }
+
+      let current = this.head;
+      while(current) {
+        if (current.value === value) {
+          node.next = current.next;
+          current.next = node;
+          return this;
+        }
+        current = current.next;
+      }
+
+      return `There is no such this value ${value} exist throughout the nodes in the linked list`;
     }
 
     includes(value) {
@@ -61,11 +116,10 @@ class LinkedList {
   }
 
 // const list = new LinkedList();
-// console.log(list)
-// const data = list.insert(2);
-// console.log(data.head)
-// console.log(data.includes(10));
-// console.log(data.toString());
+// const data = list.insert(2).insert(4);
+// console.log(data)
+// console.log(data.insertAfter(5,8))
+
 
 
 module.exports = LinkedList;
