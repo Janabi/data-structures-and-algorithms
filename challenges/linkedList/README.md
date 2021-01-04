@@ -7,6 +7,7 @@
 ## Approach & Efficiency
 ***I used 'while' looping in order to retrieve throughout the constructed linkedlist.***
 ***Big(O) -> Time -> n -> We made a while loop inside each method***
+***Big(O) -> Time -> 2n -> We made a two looping method only inside the method kthFromEnd***
 ***Big(O) -> Space -> n -> Because we create an object variables inside each methods***
 
 ## API
@@ -28,6 +29,10 @@ This method is aimed to insert a node before a node that has a given value which
 - **insertAfter(value, newVal)**
 This method is aimed to insert a node after a node that has a given value which as you can see from the second argument of this method. If the head was null then insert the node as a head.
 
+- **kthFromEnd(k)**
+This method will take an integer and get the length of linked list, then check at which index meet the same given integer to return that node value.
+
 ### Whiteboard (Solution)
 ![Whiteboard1](./assets/challenge-6.png)
 ![Whiteboard2](./assets/challenge-6-1.png)
+![Whiteboard3](./assets/whiteboard-7.png)

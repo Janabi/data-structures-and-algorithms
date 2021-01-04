@@ -85,6 +85,30 @@ class LinkedList {
       return `There is no such this value ${value} exist throughout the nodes in the linked list`;
     }
 
+    kthFromEnd(k) {
+      if (k < 0) {
+        return 'it must be equal or more than zero'
+      }
+
+      let current = this.head;
+      let length = 0;
+      while(current) {
+        length++;
+        current = current.next;
+      }
+
+      if (k >= length || length === 1) {
+        return "The given number is more than or equal to the length of linked list, or it has length of 1."
+      }
+      current = this.head;
+      for (let i = length -1; i >= 0; i--) {
+        if (i === k) {
+          return current.value;
+        }
+        current = current.next;
+      }
+    }
+
     includes(value) {
         let current = this.head;
         if (current.value === value) {
@@ -116,9 +140,9 @@ class LinkedList {
   }
 
 // const list = new LinkedList();
-// const data = list.insert(2).insert(4);
+// const data = list.insert(2).insert(4).insert(8);
 // console.log(data)
-// console.log(data.insertAfter(5,8))
+// console.log(data.kthFromEnd(2))
 
 
 
