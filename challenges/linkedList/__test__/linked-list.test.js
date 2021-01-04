@@ -73,6 +73,12 @@ describe('Happy Results from the linked list class',()=>{
         const data4 = ll.append(2);
         expect(data4.insertAfter(2,6)).toEqual({"head": {"next": {"next": null, "value": 6}, "value": 2}});
     })
+
+    it('where k is not at the end, but somewhere in the middle of the linked list', ()=>{
+        const ll = new LinkList();
+        const data4 = ll.append(2).append(4).append(8);
+        expect(data4.kthFromEnd(1)).toEqual(4);
+    })
 });
 
 
@@ -87,5 +93,29 @@ describe('Bad Results from the linked list class',()=>{
         const ll = new LinkList();
         const data5 = ll.append(2).append(4).append(8);
         expect(data5.insertBefore(10,8)).toEqual('There is no such this value 10 exist throughout the nodes in the linked list');
+    })
+
+    it('Where k is greater than the length of the linked list', ()=>{
+        const ll = new LinkList();
+        const data4 = ll.append(2).append(4).append(8);
+        expect(data4.kthFromEnd(4)).toEqual("The given number is more than or equal to the length of linked list, or it has length of 1.");
+    })
+
+    it('Where k and the length of the list are the same', ()=>{
+        const ll = new LinkList();
+        const data4 = ll.append(2).append(4).append(8);
+        expect(data4.kthFromEnd(3)).toEqual("The given number is more than or equal to the length of linked list, or it has length of 1.");
+    })
+
+    it('Where k is not a positive integer', ()=>{
+        const ll = new LinkList();
+        const data4 = ll.append(2).append(4).append(8);
+        expect(data4.kthFromEnd(-3)).toEqual("it must be equal or more than zero");
+    })
+
+    it('Where the linked list is of a size 1', ()=>{
+        const ll = new LinkList();
+        const data4 = ll.append(2);
+        expect(data4.kthFromEnd(0)).toEqual("The given number is more than or equal to the length of linked list, or it has length of 1.");
     })
 });
