@@ -1,0 +1,16 @@
+{
+  "name": "stacksAndQueues",
+  "version": "1.0.0",
+  "description": "",
+  "main": "stacks-and-queues.js",
+  "scripts": {
+    "test": "jest --verbose --coverage"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^26.6.3",
+    "jest-cli": "^26.6.3"
+  }
+}
