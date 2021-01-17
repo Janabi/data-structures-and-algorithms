@@ -2,10 +2,11 @@
 **Building A Binary Search Tree**
 
 ## Challenge
-**Creating a class to build up a binary tree where we can insert a new node to the tree or traverse on the three well-known methods called pre-order, in-order, and post-order. Also, we can check if the node conatin a certain value of node or not.**
+**Creating a class to build up a binary tree where we can insert a new node to the tree or traverse on the three well-known methods called pre-order, in-order, and post-order. Also, we can check if the node conatin a certain value of node or not. Also, it will return**
 
 ## Approach & Efficiency
 ***Traversing methods ->***
+***Max Value methods ->***
 **Big(o) -> Time -> o(1)**
 **Big(o) -> Space -> o(n)**
 
@@ -28,3 +29,9 @@ traverse using one the three methods that we mentioned them previously and check
 
 - **add(value)**
 a method to add a node to the existing binary search tree.
+
+- **find_maximum_value()**
+a method to return a max value of the node inside the binary tree.
+
+## Solution
+![Whiteboard find Max](./whiteboard-16.png)

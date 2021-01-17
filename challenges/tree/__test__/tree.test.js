@@ -40,6 +40,10 @@ describe('traversing throughout the binary search tree', ()=>{
     it('Can successfully return a collection from a postorder traversal', () => {
         expect(binaryTree.postOrder()).toEqual([8,9,7,6,2,4,5,3,1]);
     });
+    it('Can successfully return a max value of the binary tree', () => {
+        expect(binaryTree.find_maximum_value()).toEqual(9);
+    });
+    
 })
 
 describe(('Creating a new binary search tree'), ()=>{
