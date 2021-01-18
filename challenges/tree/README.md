@@ -30,8 +30,12 @@ traverse using one the three methods that we mentioned them previously and check
 - **add(value)**
 a method to add a node to the existing binary search tree.
 
-- **find_maximum_value()**
+- **findMaximumValue()**
 a method to return a max value of the node inside the binary tree.
+
+- **breadthFrist()**
+a method to traverse the binary tree based on the order level.
 
 ## Solution
 ![Whiteboard find Max](./whiteboard-16.png)
+![whiteboard breadth first](./whiteboard-17.png)
