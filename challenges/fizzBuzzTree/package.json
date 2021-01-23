@@ -1,0 +1,16 @@
+{
+  "name": "fizzBuzzTree",
+  "version": "1.0.0",
+  "description": "",
+  "main": "fizz-buzz-tree.js",
+  "scripts": {
+    "test": "jest --coverage --verbose"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^26.6.3",
+    "jest-cli": "^26.6.3"
+  }
+}
