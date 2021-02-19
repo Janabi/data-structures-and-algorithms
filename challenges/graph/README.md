@@ -8,6 +8,9 @@
 **Big(O) -> Time -> O(1)**
 **Big(O) -> Space -> O(n)**
 
+## Whiteboard
+![Whiteboard](./bfs.png)
+
 ## API
 - **_addNode_** add a node or vertex to the graph.
 - **_addEdge_** add an edge or connection that will be linked between two nodes with a certain length or weight.
